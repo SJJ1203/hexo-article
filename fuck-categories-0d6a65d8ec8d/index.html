@@ -22,9 +22,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>Deploy Hexo - 木的疏忽</title>
+  <title>fuck-categories - 木的疏忽</title>
   
-    <meta name="keywords" content="hexo">
+    <meta name="keywords" content="begin">
   
 
   
@@ -104,7 +104,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -403,7 +403,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper post dock' style="display: ;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://bing.ioliu.cn/v1/rand?w=1920&h=1080"></div>
           
@@ -486,18 +486,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   
-    <div class='headimg-div'>
-      <a class='headimg-a'>
-        <img class='headimg' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.jpg'/>
-      </a>
-    </div>
-  
   <div class="article-meta" id="top">
     
     
     
       <h1 class="title">
-        Deploy Hexo
+        fuck-categories
       </h1>
       <div class='new-meta-box'>
         
@@ -517,7 +511,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='new-meta-item category'>
     <a class='notlink'>
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <a class="category-link" href="/categories/blog/">blog</a>
+      <a class="category-link" href="/categories/begin/">begin</a>
     </a>
   </div>
 
@@ -528,7 +522,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2021年5月18日</p>
+    <p>发布于：2021年5月19日</p>
   </a>
 </div>
 
@@ -539,7 +533,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="Deploy Hexo" data-path="/blog/Deploy-Hexo-a514cba9ac6d/">
+      <div id="lc-pv" data-title="fuck-categories" data-path="/fuck-categories-0d6a65d8ec8d/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -557,19 +551,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
   
-  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+  <h3 id="创建新的文章"><a href="#创建新的文章" class="headerlink" title="创建新的文章"></a>创建新的文章</h3><pre><code class="bash">$ hexo new post [文件名称]
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+<p>将会创建到 source/_post/ 目录下，这里我为了将md文章按照我创建的分类定位，在 source/_post/ 目录下我创建了分类目录，将对应的md文章放入相应的目录中。</p>
+<h3 id="将md文章进行分类管理"><a href="#将md文章进行分类管理" class="headerlink" title="将md文章进行分类管理"></a>将md文章进行分类管理</h3><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter">permalink</a> 设置博客访问地址的规则。</p>
+<pre><code class="bash">permalink: :category/:title-:hash/
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+<p>上述规则所产生的效果就是： <a href="https://www.woodend.cn/blog/Deploy-Hexo-e7140e18b72a">https://www.woodend.cn/blog/Deploy-Hexo-e7140e18b72a</a><br>其在 public/ 下生成以分类名命名的目录，配合 post_asset_folder: true 使用将会生成如下目录结构</p>
+<pre><code class="bash">public/blog/Deploy-Hexo-e7140e18b72a/index.html
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>但是上述的配置只能分类管理hexo部署生成后的静态文件，md文章都是在 source/_post/目录下的。所以我们可以 /source/_post目录下来直接创建分类的目录，区分md文章，同时在生成静态文件之后也会是相同的目录.</p>
 
   
   
@@ -587,7 +578,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               
-                <p>本文永久链接是：<a href=http://www.woodend.cn/blog/Deploy-Hexo-a514cba9ac6d/>http://www.woodend.cn/blog/Deploy-Hexo-a514cba9ac6d/</a></p>
+                <p>本文永久链接是：<a href=http://www.woodend.cn/fuck-categories-0d6a65d8ec8d/>http://www.woodend.cn/fuck-categories-0d6a65d8ec8d/</a></p>
               
             
           </blockquote>
@@ -604,10 +595,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-05-18T18:14:40+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-05-20T17:18:31+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2021年5月18日</p>
+    <p>更新于：2021年5月20日</p>
   </a>
 </div>
 
@@ -616,7 +607,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>hexo</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/begin/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>begin</p></a></div>
 
 
         
@@ -629,7 +620,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.woodend.cn/blog/Deploy-Hexo-a514cba9ac6d/&title=Deploy Hexo - 木的疏忽&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.woodend.cn/fuck-categories-0d6a65d8ec8d/&title=fuck-categories - 木的疏忽&summary="
           
           >
           
@@ -641,7 +632,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.woodend.cn/blog/Deploy-Hexo-a514cba9ac6d/&title=Deploy Hexo - 木的疏忽&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.woodend.cn/fuck-categories-0d6a65d8ec8d/&title=fuck-categories - 木的疏忽&summary="
           
           >
           
@@ -653,7 +644,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.woodend.cn/blog/Deploy-Hexo-a514cba9ac6d/&title=Deploy Hexo - 木的疏忽&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.woodend.cn/fuck-categories-0d6a65d8ec8d/&title=fuck-categories - 木的疏忽&summary="
           
           >
           
@@ -667,7 +658,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class='hoverbox'>
           <a class='share'><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></a>
           <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAADBElEQVR42u3aQXLjMAwEwPz/07sfWJeIAaQVnOZNTkyR7csUgJ8/1j/XDwIwYMCAAQNmDcxPuD5u/OHvn75/+p6r56n7gAEDBgwYMGD2wRwHoBDm6uDpearvv/p/MGDAgAEDBsxemLuC1un+XcD2fcCAAQMGDBgwvw5mOthNgYEBAwYMGDBgwFQv0C1cnQbAdckXDBgwYMCAAXMbTLlBVSxUpftM/RCPdSLBgAEDBgwYMI/BVNfpwf/Xc3wfMGDAgAEDBswamO5KA1c6OHRayIrvAwYMGDBgwIBZA5MGpGoha3pw6LbzgwEDBgwYMGDWwKRBrVvQ6ga5q/OcBsrLQhUYMGDAgAED5rUwp4WeLkD1gKcXLl88Tb5gwIABAwYMmNfCpAWpqWBX/XwqQIIBAwYMGDBg9sKkAakdpIo/RBrsTgtYYMCAAQMGDJjvg0kHdrr7di8anxcMGDBgwIABsw6mG6iqQW968Oe2QhUYMGDAgAED5rUwacHptAGWNsimB4eO9wEDBgwYMGDArIFJB4NOD1ptwJ2eq1vwOm64gQEDBgwYMGBeD9MdBOoGr7Sx1g2cYMCAAQMGDJi9MGlhqgpQ3S8Ndu3GHhgwYMCAAQNmDUy1UJWCVp+rhbJ0cGisggcGDBgwYMCAeRymevH0wGnhKQ2G1XOBAQMGDBgwYL4H5ulC0xR4tTEIBgwYMGDAgNkP021gpYWo7gDSeOMQDBgwYMCAAbMeZqrhdldBLA2Il+8HAwYMGDBgwHwdzClAutKCVxWi3HADAwYMGDBgwLwWZvpCTwXB2wprYMCAAQMGDJg1MN1CT9ow6w4epQW0csMNDBgwYMCAAfN6mG6gSwtc1cA3PegEBgwYMGDAgPkemHRgqHrxFK47OPRYJxIMGDBgwIABswYmDYjdxtw4GBgwYMCAAQPm18OUg1URbCrQ3V6oAgMGDBgwYMA8BpMGtOp+UwGu2wgEAwYMGDBgwOyH6Qan08GfadDTQHccKMGAAQMGDBgwa2AsMGDAgAEDBsyy9RdYU+QdfSYT+wAAAABJRU5ErkJggg==">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAAC+0lEQVR42u3aS5LCMAwFQO5/aeYCk7J+mUGhvYMKxupsXkl+va1f1wsBGDBgwIABswbmVVzHPwj+Pvvc1eepesCAAQMGDBgw+2DCAehwoKsDZiFOBWfPF30eDBgwYMCAAbMXphu0ugVUA99YPWDAgAEDBgyYr4epFhANatnzgQEDBgwYMGDATAW87IAsuj8YMGDAgAED5nth0gOq4u+jA7dq8Pv3SSQYMGDAgAED5s9gsmuqcXXX53I9YMCAAQMGDJg1MN3VveBTbWi9b1pgwIABAwYMmD0w1YBUHXR1G1JTAQ8MGDBgwIAB83yY7MAqG8yyF32q5y538MCAAQMGDBgwa2HSAenQsJraL9tICwOCAQMGDBgwYNbBZC/opINTc7A2tV/5RhUYMGDAgAED5uNhugGtGwCrjbHoizt+DwYMGDBgwIBZAzM9yOoWWn1R3cEbGDBgwIABA2YvTHfDbiArF1IcyB0HbmDAgAEDBgyYdTDdCznTDaTsAC6632VdYMCAAQMGDJg1MN0Dlg/QvKjUbbBd/g4MGDBgwIAB8ziYKER1QFZtUHUbWmDAgAEDBgyY/TCnANRtBHUHZd0XGH4eDBgwYMCAAbMGptoI6sJOB8ip/wcDBgwYMGDA7IWpBqpoAyr7P9Hnu40uMGDAgAEDBsw+mPIFm+LArXsR6K4ACAYMGDBgwIDZC3N3Yynb4MoGu7FzgQEDBgwYMGDWwlQvBGWDXndgli0cDBgwYMCAAfN8mGyQmoIoN5aGAikYMGDAgAEDZh9Md03DTA3ssoM7MGDAgAEDBsw+mFdxdQNaFiAc0IKfw40qMGDAgAEDBszHw2QDXXXgNbV/N+CBAQMGDBgwYJ4Hkz3IVBDMXiiqBtTjOcCAAQMGDBgwXweTBej+f/eFtW9UgQEDBgwYMGAeAxMtJFvwdKA77g8GDBgwYMCAWQuTHYh1LwZVB3FTg0AwYMCAAQMGzH6YqcFVtnFV3WcqUIIBAwYMGDBg9sJYYMCAAQMGDJhl6wfNQ+fh2g83CwAAAABJRU5ErkJggg==">
           </div>
         </div>
       
@@ -691,7 +682,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/blog/copy-3728e2ff5a1e/'>
+        <a class='prev' href='/blog/copy-035ab7d8ee94/'>
           <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>test copy</p>
           <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
         </a>
@@ -737,7 +728,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84%E6%96%87%E7%AB%A0"><span class="toc-text">创建新的文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%86md%E6%96%87%E7%AB%A0%E8%BF%9B%E8%A1%8C%E5%88%86%E7%B1%BB%E7%AE%A1%E7%90%86"><span class="toc-text">将md文章进行分类管理</span></a></li></ol>
     </div>
   </section>
 
@@ -756,20 +747,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <script>
   window.pdata={}
   pdata.ispage=true;
-  pdata.postTitle="Deploy Hexo";
+  pdata.postTitle="fuck-categories";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>

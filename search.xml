@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>anime</title>
+      <link href="anime/anime-bb1c17d03261/"/>
+      <url>anime/anime-bb1c17d03261/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.bilibili.com/">Bilibili</a></p><span id="more"></span><div class="img-wrap"><div class="img-bg" style="background:var(--color-card)"><img class="img lazyload" src="cat.jpg" class="lazyload" data-srcset="cat.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="小猫" style="height:300px;"/></div><span class="image-caption">小猫</span></div><div class="gallery stretch" col='2'>              <p><img src="cat.jpg" class="lazyload" data-srcset="cat.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="随机图片"><br><img src="cat.jpg" class="lazyload" data-srcset="cat.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="博客logo"></p>            </div>]]></content>
+      
+      
+      <categories>
+          
+          <category> anime </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> anime </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test write</title>
       <link href="blog/test-bd32cf2030f2/"/>
       <url>blog/test-bd32cf2030f2/</url>

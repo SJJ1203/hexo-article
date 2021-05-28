@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>JsonFormat格式化时间</title>
+      <link href="json/jackson/JsonFormat-8d121540e36b/"/>
+      <url>json/jackson/JsonFormat-8d121540e36b/</url>
+      
+        <content type="html"><![CDATA[<p>关于jackson的注解 [^@JsonFormat]<br>[^@JsonFormat]: jackson格式化时间注解@JsonFormat(pattern = “yyyy-MM-dd”)</p><span id="more"></span><h3 id="引入jackson"><a href="#引入jackson" class="headerlink" title="引入jackson"></a>引入jackson</h3><h4 id="Maven方式"><a href="#Maven方式" class="headerlink" title="Maven方式"></a>Maven方式</h4><pre><code class="xml">&lt;!-- jackson --&gt;&lt;dependency&gt;    &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;    &lt;artifactId&gt;jackson-core&lt;/artifactId&gt;    &lt;version&gt;2.12.1&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;    &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;    &lt;artifactId&gt;jackson-annotations&lt;/artifactId&gt;    &lt;version&gt;2.12.1&lt;/version&gt;&lt;/dependency&gt;&lt;dependency&gt;    &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;    &lt;artifactId&gt;jackson-databind&lt;/artifactId&gt;    &lt;version&gt;2.12.1&lt;/version&gt;&lt;/dependency&gt;</code></pre><h4 id="Gradle-方式"><a href="#Gradle-方式" class="headerlink" title="Gradle 方式"></a>Gradle 方式</h4><pre><code class="yaml">// Gradle 引入依赖compile group: &#39;com.fasterxml.jackson.core&#39;, name: &#39;jackson-core&#39;, version: &#39;2.12.1&#39;compile group: &#39;com.fasterxml.jackson.core&#39;, name: &#39;jackson-databind&#39;, version: &#39;2.12.1&#39;// 如没有用到注解去配置可不用引入此依赖compile group: &#39;com.fasterxml.jackson.core&#39;, name: &#39;jackson-annotations&#39;, version: &#39;2.12.1&#39;</code></pre><h3 id="格式化时间使用方式"><a href="#格式化时间使用方式" class="headerlink" title="格式化时间使用方式"></a>格式化时间使用方式</h3><h4 id="方式一：配置在实体类的属性上"><a href="#方式一：配置在实体类的属性上" class="headerlink" title="方式一：配置在实体类的属性上"></a>方式一：配置在实体类的属性上</h4><pre><code class="java">@JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;, timezone = &quot;GMT+8&quot;)private Date curDateTime;</code></pre><h4 id="方式二：配置文件中全局配置"><a href="#方式二：配置文件中全局配置" class="headerlink" title="方式二：配置文件中全局配置"></a>方式二：配置文件中全局配置</h4><pre><code class="yaml">spring:  jackson:    date-format: yyyy-MM-dd HH:mm:ss    time-zone: GMT+8</code></pre><blockquote><p><strong>注意事项：</strong><br>当设置全局配置时间格式化时，同时也在实体类的属性上使用@JsonFormate注解。<br>此时以实体类属性上的注解配置的时间格式为准，此配置将会优先于全局配置</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> json </category>
+          
+          <category> jackson </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> jackson </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>anime</title>
       <link href="anime/anime-bb1c17d03261/"/>
       <url>anime/anime-bb1c17d03261/</url>

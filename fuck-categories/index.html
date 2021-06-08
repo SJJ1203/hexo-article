@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,9 +22,13 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档：2021 - 木的疏忽</title>
+  <title>fuck-categories - 木的疏忽</title>
+  
+    <meta name="keywords" content="hexo">
   
 
+  
+    <meta name="description" content="自定义md文章和生成的博客静态文件管理规则">
   
 
   <!-- feed -->
@@ -104,7 +106,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -403,7 +405,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://bing.ioliu.cn/v1/rand?w=1920&h=1080"></div>
           
@@ -460,266 +462,252 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/blog/test/">
-        <img class='headimg' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.jpg'/>
-      </a>
-    </div>
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/blog/test/">
-        test write
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-06-07</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/blog/">blog</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/blog/test/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
   
-  
-  
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title" >
-      <a href="/deploy/springboot-jsp-jar/">
-        Springboot集成JSP, jar部署/war部署
-      </a>
-    </h2>
-  
-  <div class='md'>
     
-      <p>前几天老大丢过来一个Springboot的项目, 让我把项目跑起来。顺便让我看看改造成本，以及能否循环再利用。本来想着又能偷懒一会了, 但是看到项目中还有JSP文件, 眉头一皱意识到并没有那么简单 😐 果然本地通过idea跑项目没问题, jar发布测试环境就有访问不了了, 所以写下这踩坑记录😭</p>
     
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-06-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/deploy/">deploy</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/deploy/springboot-jsp-jar/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/json/jackson/JsonFormat/">
-        <img class='headimg' src='/json/jackson/JsonFormat-8d121540e36b/head.jpg'/>
-      </a>
-    </div>
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/json/jackson/JsonFormat/">
-        JsonFormat格式化时间
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>关于jackson的注解 [^@JsonFormat]<br>[^@JsonFormat]: jackson格式化时间注解@JsonFormat(pattern = “yyyy-MM-dd”)</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-28</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/json/">json</a><span class="sep"></span><a class="category-link" href="/categories/json/jackson/">jackson</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/json/jackson/JsonFormat/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/anime/anime/">
-        anime
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/">Bilibili</a></p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/anime/">anime</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/anime/anime/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/fuck-categories/">
+      <h1 class="title">
         fuck-categories
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>自定义md文章和生成的博客静态文件管理规则</p>
-    
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/about" rel="nofollow">
+    <img no-lazy src="http://www.woodend.cn/logo.png">
+    <p>木的疏忽</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/blog/">blog</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+
+
+          
         
-        <time>2021-05-19</time>
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年5月19日</p>
+  </a>
+</div>
+
+          
         
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/blog/">blog</a>
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="fuck-categories" data-path="/fuck-categories/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <p>自定义md文章和生成的博客静态文件管理规则</p>
+<span id="more"></span>
+
+<h3 id="创建新的文章"><a href="#创建新的文章" class="headerlink" title="创建新的文章"></a>创建新的文章</h3><pre><code class="bash">$ hexo new post [文件名称]
+</code></pre>
+<p>将会创建到<code>source/_post/</code>目录下，这里我为了将md文章按照我创建的分类定位，在<code>source/_post/</code>目录下我创建了分类目录，将对应的md文章放入相应的目录中。</p>
+<h3 id="将md文章进行分类管理"><a href="#将md文章进行分类管理" class="headerlink" title="将md文章进行分类管理"></a>将md文章进行分类管理</h3><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter">permalink</a> 设置博客访问地址的规则。</p>
+<pre><code class="yaml">permalink: :category/:title-:hash/
+</code></pre>
+<p>上述规则所产生的效果就是：<code>https://www.woodend.cn/blog/Deploy-Hexo-e7140e18b72a</code><br>其在<code>public/</code>下生成以分类名命名的目录，配合</p>
+<pre><code class="yaml">post_asset_folder: true
+</code></pre>
+<p>将会生成如下目录结构 <code>public/blog/Deploy-Hexo-e7140e18b72a/index.html</code></p>
+<p>但是上述的配置只能分类管理hexo部署生成后的静态文件，md文章都是在<code>source/_post/</code>目录下的。所以我们可以<code>/source/_post</code>目录下来直接创建分类的目录，区分md文章，同时在生成静态文件之后也会是相同的目录.</p>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/fuck-categories/'>
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://www.woodend.cn/fuck-categories/>http://www.woodend.cn/fuck-categories/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-05-20T17:18:31+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年5月20日</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
-    
-  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>hexo</p></a></div>
 
 
-	
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.woodend.cn/fuck-categories/&title=fuck-categories - 木的疏忽&summary=自定义md文章和生成的博客静态文件管理规则"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.woodend.cn/fuck-categories/&title=fuck-categories - 木的疏忽&summary=自定义md文章和生成的博客静态文件管理规则"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.woodend.cn/fuck-categories/&title=fuck-categories - 木的疏忽&summary=自定义md文章和生成的博客静态文件管理规则"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAADAElEQVR42u3aQXLDQAgEQP3/08kHotIOoCrjNLfElrVqXaaA60f9WRcCMGDAgAEDZg3MVazbH775/O76t++TPg8YMGDAgAEDZh/McQAKD5QeOL1v9Xt33wcDBgwYMGDA7IU5fcA0oHV/5+n6secBAwYMGDBgwPw7mDRQPQW7NCiCAQMGDBgwYMBMBbW4QRQ2rNYFPDBgwIABAwbM6zBTDzS1KPTWiwEDBgwYMGDAfA9MWlMHf+vv8vOAAQMGDBgwYNbAdOu0sZReVx3UtZ8HDBgwYMCAAbMGphqQug2t7qCu2gh7fJFgwIABAwYMmHUw1eDUDVrVgVy6eDTWwQMDBgwYMGDAfBxM2niaWgiqDtBS6GNAMGDAgAEDBsxamGpDKA1a1eCXvtD2RhUYMGDAgAED5mNhugFpenGoGuCqAz4wYMCAAQMGzPfAVMG6g69uY6zaaAMDBgwYMGDA7IWZunE16HUHZdXG2PHADQwYMGDAgAGzBmYqMFVBuwtI7cYaGDBgwIABA2YNTHdwVQ1q042wNPjdXgcGDBgwYMCAWQeTNpi6A7PpBlR5UQgMGDBgwIAB83Uw12FVG05vLRB1gx8YMGDAgAEDZg9MOtiaWuy5hqo7wLsNeGDAgAEDBgyYNTBTjaUueBe6uxAFBgwYMGDAgNkHUx2sdRtZKdTUIPBx4AYGDBgwYMCAWQNTbUhVwaqDtm5QjAduYMCAAQMGDJh1MNWDpwtJP4dVfRHpfcGAAQMGDBgwe2HKwWjo4HFjqRkgwYABAwYMGDB7YbqVDtzeCowp5OPADQwYMGDAgAHz8TBXsdIDdIPe1IJSPHADAwYMGDBgwHw8TBronm7UbUilDbDuecGAAQMGDBgw+2GqAaoLcBrw0uAXB0kwYMCAAQMGDJjD/6cBrdqQOgYDAwYMGDBgwPw7mGpAS8G6ge7xHGDAgAEDBgyYtTDVRtL073WDYLr4BAYMGDBgwIDZCzM1uJoKgF2wsYEbGDBgwIABA+ZjYRQYMGDAgAEDZln9AtP1Zn9/pSViAAAAAElFTkSuQmCC">
+          </div>
+        </div>
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/anime/anime/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>anime</p>
+          <p class='content'>Bilibili
+
+
+小猫
+
+
+              
+            
+
+
+
+
+
+
+</p>
+        </a>
+      
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -727,136 +715,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='http://www.woodend.cn/logo.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">木的疏忽</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:com.ojbk@gmail.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/SJJ1203/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/anime/" href="/categories/anime/"
-            id="categoriesanime"
-            ><div class='name'>anime</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/blog/" href="/categories/blog/"
-            id="categoriesblog"
-            ><div class='name'>blog</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/deploy/" href="/categories/deploy/"
-            id="categoriesdeploy"
-            ><div class='name'>deploy</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/json/" href="/categories/json/"
-            id="categoriesjson"
-            ><div class='name'>json</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/json/jackson/" href="/categories/json/jackson/"
-            id="categoriesjsonjackson"
-            ><div class='name'>jackson</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Springboot/" style="font-size: 14px; color: #999">Springboot</a> <a href="/tags/anime/" style="font-size: 14px; color: #999">anime</a> <a href="/tags/hexo/" style="font-size: 24px; color: #555">hexo</a> <a href="/tags/jackson/" style="font-size: 14px; color: #999">jackson</a> <a href="/tags/tomcat/" style="font-size: 14px; color: #999">tomcat</a>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84%E6%96%87%E7%AB%A0"><span class="toc-text">创建新的文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%86md%E6%96%87%E7%AB%A0%E8%BF%9B%E8%A1%8C%E5%88%86%E7%B1%BB%E7%AE%A1%E7%90%86"><span class="toc-text">将md文章进行分类管理</span></a></li></ol>
     </div>
   </section>
 
@@ -867,27 +738,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
 		  
 		  <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="fuck-categories";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>

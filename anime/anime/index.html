@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,9 +22,13 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档：2021 - 木的疏忽</title>
+  <title>anime - 木的疏忽</title>
+  
+    <meta name="keywords" content="anime">
   
 
+  
+    <meta name="description" content="Bilibili">
   
 
   <!-- feed -->
@@ -104,7 +106,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -403,7 +405,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://bing.ioliu.cn/v1/rand?w=1920&h=1080"></div>
           
@@ -460,266 +462,251 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/blog/test/">
-        <img class='headimg' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.jpg'/>
-      </a>
-    </div>
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/blog/test/">
-        test write
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-06-07</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/blog/">blog</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/blog/test/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
   
-  
-  
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title" >
-      <a href="/deploy/springboot-jsp-jar/">
-        Springboot集成JSP, jar部署/war部署
-      </a>
-    </h2>
-  
-  <div class='md'>
     
-      <p>前几天老大丢过来一个Springboot的项目, 让我把项目跑起来。顺便让我看看改造成本，以及能否循环再利用。本来想着又能偷懒一会了, 但是看到项目中还有JSP文件, 眉头一皱意识到并没有那么简单 😐 果然本地通过idea跑项目没问题, jar发布测试环境就有访问不了了, 所以写下这踩坑记录😭</p>
     
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-06-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/deploy/">deploy</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/deploy/springboot-jsp-jar/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/json/jackson/JsonFormat/">
-        <img class='headimg' src='/json/jackson/JsonFormat-8d121540e36b/head.jpg'/>
-      </a>
-    </div>
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/json/jackson/JsonFormat/">
-        JsonFormat格式化时间
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>关于jackson的注解 [^@JsonFormat]<br>[^@JsonFormat]: jackson格式化时间注解@JsonFormat(pattern = “yyyy-MM-dd”)</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-05-28</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/json/">json</a><span class="sep"></span><a class="category-link" href="/categories/json/jackson/">jackson</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/json/jackson/JsonFormat/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/anime/anime/">
+      <h1 class="title">
         anime
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/">Bilibili</a></p>
-    
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/about" rel="nofollow">
+    <img no-lazy src="http://www.woodend.cn/logo.png">
+    <p>木的疏忽</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/anime/">anime</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+
+
+          
         
-        <time>2021-05-27</time>
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年5月27日</p>
+  </a>
+</div>
+
+          
         
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/anime/">anime</a>
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="anime" data-path="/anime/anime/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/">Bilibili</a></p>
+<span id="more"></span>
+
+<div class="img-wrap"><div class="img-bg" style="background:var(--color-card)"><img class="img lazyload" src="cat.jpg" class="lazyload" data-srcset="cat.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="小猫" style="height:300px;"/></div><span class="image-caption">小猫</span></div>
+
+<div class="gallery stretch" col='2'>
+              <p><img src="cat.jpg" class="lazyload" data-srcset="cat.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="随机图片"><br><img src="cat.jpg" class="lazyload" data-srcset="cat.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="博客logo"></p>
+            </div>
+
+
+
+
+
+
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/anime/anime/'>
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://www.woodend.cn/anime/anime/>http://www.woodend.cn/anime/anime/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-05-27T13:55:31+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年5月27日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
+          
   
-  
-  
-  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/anime/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>anime</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
-    <h2 class="article-title" >
-      <a href="/fuck-categories/">
-        fuck-categories
-      </a>
-    </h2>
-  
-  <div class='md'>
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.woodend.cn/anime/anime/&title=anime - 木的疏忽&summary=Bilibili"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
     
-      <p>自定义md文章和生成的博客静态文件管理规则</p>
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.woodend.cn/anime/anime/&title=anime - 木的疏忽&summary=Bilibili"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.woodend.cn/anime/anime/&title=anime - 木的疏忽&summary=Bilibili"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAAC60lEQVR42u3aQW7DMAwEQP//0+kD2sDikkHDZHQL6krU+LIgfT2sP9eFAAwYMGDAgFkDc4Xr14Y3z1X/79nz3f1u6wQDBgwYMGDArIM5DkA3BXULTc+fug8YMGDAgAEDZi9MNahVn6uem76I+D5gwIABAwYMmK+D6Qa+qWAIBgwYMGDAgAHThTkNXndBcXpfMGDAgAEDBsznwqSFnA7Cug2pqRcFBgwYMGDAgPkcmOnG0H//ju8DBgwYMGDAgFkD013TA7nTgPh40QIDBgwYMGDA7IFJA1K3IdUd3N3tE9cPBgwYMGDAgFkHcxfEqiBTA7xqg6x6j+MOHhgwYMCAAQPm7WG6hVY/COpeeKpxBgYMGDBgwIDZB1MNSMcHNPc5hU8bW0/PBQMGDBgwYMCsgUkD2emFuh8idT9Aqg74wIABAwYMGDB7YboXvMI1FtDCwAgGDBgwYMCA2QvTLWwKuLp/2jg7DnhgwIABAwYMmLeFOW1EpQO2uGHUDILVv4MBAwYMGDBg9sNUGzxpIIsD2CFwFRQMGDBgwIABsxcmvVA3yE0N1qYaaWDAgAEDBgyYPTBTB1eD26v3S4MfGDBgwIABA2YvTHfA1R2opQFv6kWAAQMGDBgwYPbBvHrgVQ5a4Wo3rsCAAQMGDBgwa2GqwWkquE2fXx0QggEDBgwYMGD2wkz/TuFOn58OnGDAgAEDBgyY/TDp4K0bGLv1dP8OBgwYMGDAgNkPcxqopgPdaYPptN4UCgwYMGDAgAGzB6a7qgVVL9odsJUbbWDAgAEDBgyYNTBXuKZBqwDVAHocSMGAAQMGDBgw62CqF0ovkg700gYXGDBgwIABA+Z7YKYGbmkg7H5QlA7ewIABAwYMGDDfC1PdLy48fGFgwIABAwYMGDDVRlX6IdGrAt3t+WDAgAEDBgyYtTBTjaQ0YHUHbV0wMGDAgAEDBsw+mDQ4VQdtVdg0OMZ1gAEDBgwYMGDWwFhgwIABAwYMmGXrBzZtZJ2YvNZdAAAAAElFTkSuQmCC">
+          </div>
+        </div>
+      
+    
+      
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+</div>
+
+
+
         
-        <time>2021-05-19</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/blog/">blog</a>
-        
-      </div>
       
-        <div>
-          <a class='readmore' href='/fuck-categories/'>
-            阅读全文
-          </a>
-        </div>
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/json/jackson/JsonFormat/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>JsonFormat格式化时间</p>
+          <p class='content'>关于jackson的注解 [^@JsonFormat][^@JsonFormat]: jackson格式化时间注解@JsonFormat(pattern = “yyyy-MM-dd”)
+
+
+引入...</p>
+        </a>
+      
+      
+        <a class='next' href='/fuck-categories/'>
+          <p class='title'>fuck-categories<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>自定义md文章和生成的博客静态文件管理规则
+
+
+创建新的文章$ hexo new post [文件名称]
+
+将会创建到source/_post/目录下，这里我为了将md文章按照我创建的分类定位，...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-	
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -727,138 +714,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='http://www.woodend.cn/logo.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">木的疏忽</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:com.ojbk@gmail.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/SJJ1203/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
-
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/anime/" href="/categories/anime/"
-            id="categoriesanime"
-            ><div class='name'>anime</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/blog/" href="/categories/blog/"
-            id="categoriesblog"
-            ><div class='name'>blog</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/deploy/" href="/categories/deploy/"
-            id="categoriesdeploy"
-            ><div class='name'>deploy</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/json/" href="/categories/json/"
-            id="categoriesjson"
-            ><div class='name'>json</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/json/jackson/" href="/categories/json/jackson/"
-            id="categoriesjsonjackson"
-            ><div class='name'>jackson</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Springboot/" style="font-size: 14px; color: #999">Springboot</a> <a href="/tags/anime/" style="font-size: 14px; color: #999">anime</a> <a href="/tags/hexo/" style="font-size: 24px; color: #555">hexo</a> <a href="/tags/jackson/" style="font-size: 14px; color: #999">jackson</a> <a href="/tags/tomcat/" style="font-size: 14px; color: #999">tomcat</a>
-    </div>
-  </section>
 
 
   
@@ -867,27 +723,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
 		  
 		  <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="anime";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>

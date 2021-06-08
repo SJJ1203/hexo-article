@@ -471,7 +471,43 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 						<h2>2021</h2>
 					
 						<div class='timenode'>
-								<a class="meta" href="/json/jackson/JsonFormat-8d121540e36b/">
+								<a class="meta" href="/blog/test/">
+									<time>06-07</time>
+									
+										test write
+									
+									
+									
+									
+										&nbsp;<i class="fab fa-angular red" aria-hidden="true"></i>
+									
+								</a>
+						</div>
+				
+			
+				
+				
+					
+						<div class='timenode'>
+								<a class="meta" href="/deploy/springboot-jsp-jar/">
+									<time>06-03</time>
+									
+										Springboot集成JSP, jar部署/war部署
+									
+									
+									
+									
+										&nbsp;<i class="fas fa-server red" aria-hidden="true"></i>
+									
+								</a>
+						</div>
+				
+			
+				
+				
+					
+						<div class='timenode'>
+								<a class="meta" href="/json/jackson/JsonFormat/">
 									<time>05-28</time>
 									
 										JsonFormat格式化时间
@@ -489,7 +525,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 				
 					
 						<div class='timenode'>
-								<a class="meta" href="/anime/anime-bb1c17d03261/">
+								<a class="meta" href="/anime/anime/">
 									<time>05-27</time>
 									
 										anime
@@ -507,25 +543,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 				
 					
 						<div class='timenode'>
-								<a class="meta" href="/blog/test-bd32cf2030f2/">
-									<time>05-25</time>
-									
-										test write
-									
-									
-									
-									
-										&nbsp;<i class="fab fa-angular red" aria-hidden="true"></i>
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/fuck-categories-0d6a65d8ec8d/">
+								<a class="meta" href="/fuck-categories/">
 									<time>05-19</time>
 									
 										fuck-categories
@@ -639,6 +657,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             ><div class='name'>blog</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box"
+            title="/categories/deploy/" href="/categories/deploy/"
+            id="categoriesdeploy"
+            ><div class='name'>deploy</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
             title="/categories/json/" href="/categories/json/"
             id="categoriesjson"
             ><div class='name'>json</div><div class='badge'>(1)</div></a></li>
@@ -670,7 +693,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-      <a href="/tags/anime/" style="font-size: 14px; color: #999">anime</a> <a href="/tags/hexo/" style="font-size: 24px; color: #555">hexo</a> <a href="/tags/jackson/" style="font-size: 14px; color: #999">jackson</a>
+      <a href="/tags/Springboot/" style="font-size: 14px; color: #999">Springboot</a> <a href="/tags/anime/" style="font-size: 14px; color: #999">anime</a> <a href="/tags/hexo/" style="font-size: 24px; color: #555">hexo</a> <a href="/tags/jackson/" style="font-size: 14px; color: #999">jackson</a> <a href="/tags/tomcat/" style="font-size: 14px; color: #999">tomcat</a>
     </div>
   </section>
 
@@ -715,22 +738,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="aplayer-container">
           
-
-  
-    <meting-js
-      theme='#1BCDFC'
-      autoplay='false'
-      volume='0.07'
-      loop='all'
-      order='list'
-      fixed='false'
-      list-max-height='320px'
-      server='netease'
-      type='playlist'
-      id='129853776'
-      list-folded='true'>
-    </meting-js>
-  
 
 
         </div>
@@ -1039,26 +1046,6 @@ var loadCSS = function( href, before, media, attributes ){
         
       
         
-          <li class='music name'>
-            <p class='nav music-title fix-cursor-default'></p>
-          </li>
-          <li class='music ctrl'>
-            <a class='nav icon-only backward fix-cursor-default' onclick='aplayerBackward()'><i class='fa fa-step-backward fa-fw'></i></a>
-            <a class='nav icon-only toggle fix-cursor-default' onclick='aplayerToggle()'><i class='fa fa-play fa-fw'></i></a>
-            <a class='nav icon-only forward fix-cursor-default' onclick='aplayerForward()'><i class='fa fa-step-forward fa-fw'></i></a>
-          </li>
-          <li class='music volume'>
-            <a class='nav volume'>
-              <div class="aplayer-volume-bar-wrap">
-                <div class="aplayer-volume-bar fix-cursor-pointer">
-                  <div class="aplayer-volume"></div>
-                  <i class='left fa fa-volume-off fa-fw'></i>
-                  <i class='right fa fa-volume-up fa-fw'></i>
-                </div>
-              </div>
-            </a>
-          </li>
-        
       
     </ul>
   </div>
@@ -1162,11 +1149,6 @@ var loadCSS = function( href, before, media, attributes ){
         }
       }
       // 有音乐播放器 see: layout/_third-party/aplayer/script.ejs
-      
-      if(volantis.APlayerLoaded){ // APlayer加载完成？
-        // 如果有aplayer，初始化一下
-        checkAPlayer();
-      }
       
       return false; // 该行代码确保系统自带的右键菜单不会被调出
     }
@@ -1333,32 +1315,6 @@ var loadCSS = function( href, before, media, attributes ){
 </script>
 
 
-
-
-  <script>
-  let APlayerController = new Object();
-  APlayerController.id = '129853776';  // 设定全局音乐播放ID
-  APlayerController.volume = '0.07';
-  loadCSS("https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css", window.volantis.loadcss);
-  // APlayer 需要在  MetingJS 之前加载
-  loadScript("https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js")
-  window.volantis.APlayerLoaded=0 // APlayer加载完成状态
-  var checkAPlayer = setInterval(function () {
-    if (!window.APlayer) return // APlayer加载完成？
-	  if ($("#safearea").css("display")!="block") return // 文章内容加载完成？ see: source/css/first.styl
-    clearInterval(checkAPlayer)
-	  if (!window.volantis.APlayerLoaded&&!window.MetingJSElement){ // APlayer只能加载一次
-      window.volantis.APlayerLoaded=1 // APlayer加载完成
-      loadScript("https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js") // 加载 MetingJS
-	  }
-  }, 2500) // 按照网速调节差分2.5s
-  // rightmenu see: layout/_partial/rightmenu.ejs
-
-  
-    loadScript("/js/aplayer.js")
-  
-
-</script>
 
 
 
